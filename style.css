@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --blue:#5280E2;
+    --green:#15cdcb;
+    --background-dark:#212226;
+    --ligth-gray:#E0DEDE;
+    --white:#FFF;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    background-color: var(--background-dark);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+   
+}
+
+h1{
+    font-weight: 400;
+    line-height: 66px;
+    font-size: 2.75rem;
+    color: var(--green);
+}
+
+h2{
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+p{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 1rem;
+    color: var(--ligth-gray);
+}
+
+button{
+    background-color: var(--blue);
+    border: none;
+    border-radius: 16px;
+    padding:15px 50px;
+    font-size: 1rem;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:calc(100vh - 70px);
+    
+}
+
+header .logo-mobile{
+    display: none;
+    
+}
+header .content{
+    width: 50%;
+    height:fit-content;
+    
+}
+
+
+
+header .content h1 , p{
+    margin-top: -25px;
+
+}
+
+header .content button{
+    margin-top: 20px;
+
+}
+
+nav .menu-mobile{
+    display: none;
+    
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 70px;
+    background-color: var(--background-dark);
+}
+
+nav  .logo{
+    background-color: #e2a852;
+    width: 200px;
+    height: 100%;
+}
+
+nav  .links{
+ 
+    width: 70%;
+}
+
+nav  .links ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+nav .links a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+
+   
+}
+
+nav .links a svg{
+    display: none;  
+}
+
+section{
+    background-color: #5280E2;
+    height: 10000px;
+}
+
+@media (max-width: 768px) {
+   
+    body{
+        width: 100%;
+        
+    }
+    header .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;      
+    }
+
+    header .logo-mobile{
+        display: block;
+        position: absolute;
+        top: 30px;
+        background-color: #52e293;
+        width: 200px;
+        height: 70px
+        
+    }
+
+   nav{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    
+    
+   
+   }
+    nav .logo{
+        display: none;
+    }
+    
+
+    nav  .links{
+        width: 100%;
+        
+    }
+
+    nav .links a svg{
+        display: block;  
+        margin: 0 auto 10px;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    nav .links a {
+        font-size: 12px;
+    }
+}
