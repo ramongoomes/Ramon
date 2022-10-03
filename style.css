@@ -104,6 +104,7 @@ nav {
     justify-content: space-between;
     height: 70px;
     background-color: var(--background-dark);
+    z-index: 99;
 }
 
 nav  .logo{
@@ -135,10 +136,42 @@ nav .links a svg{
     display: none;  
 }
 
-section{
-    background-color: #5280E2;
-    height: 10000px;
+.about{
+    display: flex;
+    padding: 250px 0;
 }
+
+.about .container{
+    width: 50%;
+    
+}
+
+.about .img-container{
+    width: 50%;
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+
+.about .img-container img{
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    
+}
+
+.about .img-container .line-details{
+    width: calc(50% + 25px);
+    height: calc(100% + 25px);
+    border: 1px dashed orange;
+    position: absolute;
+    top:-15px;
+    right: calc(62% - 35% - 25px);
+}
+
 
 @media (max-width: 768px) {
    
@@ -182,12 +215,14 @@ section{
 
     nav  .links{
         width: 100%;
+        margin: 0 20px;
         
     }
 
     nav .links a svg{
         display: block;  
         margin: 0 auto 10px;
+        
     }
     
     
@@ -197,4 +232,6 @@ section{
     nav .links a {
         font-size: 12px;
     }
+
+   
 }
