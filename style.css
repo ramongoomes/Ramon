@@ -172,6 +172,58 @@ nav .links a svg{
     right: calc(62% - 35% - 25px);
 }
 
+.services{
+    text-align: center;
+    
+}
+
+.services .container-services{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    max-width: 1200px;
+    
+    
+}
+
+.services .container-services .card-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 357px;
+    height: 394px;
+    border: 1px solid var(--ligth-gray);
+    border-radius: 16px;
+
+    padding: 40px ;
+}
+.services .container-services .card-services img{
+    width: 50px;
+}
+.services .container-services .card-services h2{
+    margin-top: 40px;
+}
+
+.services .container-services .card-services p{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1050px) {
 
     .about{
