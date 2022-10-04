@@ -194,11 +194,20 @@ nav .links a svg{
 
     width: 357px;
     height: 394px;
-    border: 1px solid var(--ligth-gray);
+    border: 1px solid orangered;
     border-radius: 16px;
+    background-color: #36373a;
 
     padding: 40px ;
 }
+.services .container-services .card-services:nth-child(2){
+    border-color: ORANGE;
+}
+
+.services .container-services .card-services:nth-child(3){
+    border-color: yellow;
+}
+
 .services .container-services .card-services img{
     width: 50px;
 }
@@ -222,9 +231,11 @@ nav .links a svg{
 
 
 
+/* RESPONSIVIDADE */
 
 
-@media (max-width: 1050px) {
+
+@media (max-width: 1250px) {
 
     .about{
         flex-direction: column;
@@ -248,8 +259,37 @@ nav .links a svg{
         right: calc(50% - 47.5% - 25px);
     }
 
+    .services .container-services{
+        margin: 50px;
+        
+    }
+    .services .container-services .card-services{
+        padding: 10px;
+    }
+
+    .services .container-services .card-services:nth-child(2){
+        margin: 0 20px;
+    }
+
+
     
 
+}
+
+@media (max-width: 1044px){
+    .services .container-services{
+        display:flex;
+        flex-direction: column;
+        align-items: center;  
+        
+
+    }
+
+    .services .container-services .card-services{
+        margin: 25px;
+    }
+
+   
 }
 @media (max-width: 768px) {
    
