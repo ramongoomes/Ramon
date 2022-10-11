@@ -110,6 +110,9 @@ nav .links ul {
   justify-content: space-between;
   padding: 0;
 }
+nav .links ul  svg {
+  display: none;
+}
 nav .links a {
   text-decoration: none;
   color: var(--white);
@@ -119,9 +122,7 @@ nav .links a {
 }
 
 
-nav .links svg {
-  display: none;
-}
+
 
 
 header {
