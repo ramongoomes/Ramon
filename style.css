@@ -8,6 +8,8 @@
   --white: #fff;
   --secundary-bg: #36373a;
   --secundary-bg: #36373a;
+
+  --primary-grd:linear-gradient(158deg, rgb(0, 179, 219) 0%, hsl(195, 100%, 35%) 100%);
 }
 
 * {
@@ -25,7 +27,7 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   width: 90%;
 }
 
@@ -33,14 +35,14 @@ h1 {
   font-weight: 400;
   line-height: 66px;
   font-size: 2.75rem;
-  color: var(--green);
+  color: var(--white);
 }
 
 h2 {
   font-weight: 400;
   line-height: 36px;
   font-size: 1.7rem;
-  color: var(--white);
+  color: var(--ligth-gray);
 }
 
 p {
@@ -51,48 +53,29 @@ p {
 }
 
 button {
-  background-color: var(--blue);
+  background: var(--primary-grd);
   border: none;
   border-radius: 16px;
   padding: 15px 50px;
   font-size: 1rem;
   color: var(--white);
   font-family: "Poppins", sans-serif;
-}
 
-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: calc(100vh - 70px);
+  cursor: pointer;
 }
-
-header .logo-mobile {
-  display: none;
-}
-header .content {
-  width: 50%;
-  height: fit-content;
-}
-
-header .content h1,
-p {
-  margin-top: -25px;
-}
-
-header .content button {
-  margin-top: 20px;
-}
-
-nav .menu-mobile {
-  display: none;
+.detail-text {
+  background: var(--primary-grd) ;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: rgb(255, 255, 255);
 }
 
 nav {
   display: flex;
   position: sticky;
-  top: 0;
+  top: 0px;
+  padding-top: 20px;
   justify-content: space-between;
   height: 70px;
   background-color: var(--background-dark);
@@ -100,10 +83,23 @@ nav {
 }
 
 nav .logo {
-  background-color: #e2a852;
-  width: 200px;
-  height: 100%;
+   width: 200px;
+    height: 100%;
+    
 }
+
+
+nav .logo p {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+nav .logo p:nth-child(2) {
+  margin-left: 20px;
+}
+
 
 nav .links {
   width: 70%;
@@ -118,11 +114,50 @@ nav .links a {
   text-decoration: none;
   color: var(--white);
   font-size: 1.1rem;
+
+  
 }
+
 
 nav .links a svg {
   display: none;
 }
+
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+
+header .content {
+  width: 50%;
+  height: fit-content;
+}
+
+header .content h1,
+p {
+  margin-top: -25px;
+}
+header .content h1{
+  font-weight: 700;
+
+
+}
+header .content button {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
 
 .about {
   display: flex;
@@ -210,6 +245,8 @@ nav .links a svg {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  max-width: 1500px;
 }
 
 .curriculum .container-curriculum .img-curriculum {
@@ -336,33 +373,46 @@ nav .links a svg {
     text-align: center;
   }
 
-  header .logo-mobile {
-    display: block;
-    position: absolute;
-    top: 30px;
-    background-color: #52e293;
-    width: 200px;
-    height: 70px;
-  }
+  
 
   nav {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    top: unset;
+    position: sticky;
+    width: 90%;
+    margin: 0 auto;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    
+
+    
+    
+    
   }
   nav .logo {
+    display: block;
+  }
+  
+  nav .links ul{
+    position: absolute;
+    right: 0px;
+    
+    top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  nav .links a{
     display: none;
   }
 
-  nav .links {
-    width: 100%;
-    margin: 0 20px;
-  }
-
-  nav .links a svg {
+  nav .links svg {
+    width: 50px;
+    height: 50px;
+    
     display: block;
     margin: 0 auto 10px;
+    color: var(--ligth-gray);
   }
 
   .about .img-container .line-details {
