@@ -11,7 +11,6 @@
   </head>
   <script src="https://unpkg.com/feather-icons"></script>
   <body>
-
     <nav>
       <div class="logo">
         <p><span class="detail-text"><</span>Ramon</p>
@@ -25,15 +24,28 @@
           <a href="#">Curriculo</a>
           <a href="#">Contato</a>
 
+          <i id="menu" data-feather="menu"></i>
 
-          <i data-feather="menu"></i>
+          
         </ul>
+        
       </div>
+
+      <div class="menu-nav" id="mobile">
+        <ul>
+          <li>
+          <a href="#">Sobre</a>
+          <a href="#">Serviços</a>
+          <a href="#">Portifólio</a>
+          <a href="#">Curriculo</a>
+          <a href="#">Contato</a>
+        </li>
+        </ul>
+        </div>
     </nav>
 
     <header>
       <div class="content">
-        
         <h2>Hello,</h2>
         <h1>I am Ramon Gomes</h1>
         <p>
@@ -45,7 +57,6 @@
       </div>
     </header>
 
-    
     <section class="about">
       <div class="container">
         <h1>Sobre</h1>
@@ -128,7 +139,10 @@
       </div>
     </section>
     <script>
+      
       feather.replace();
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
