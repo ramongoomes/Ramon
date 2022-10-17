@@ -366,9 +366,20 @@ margin: 0 auto;
 @media (max-width: 1044px) {
   .about .container{
     flex-direction: column;
-    text-align: center;
+    
     align-items: center;
    
+  }
+
+  .about .container .container-description {
+    width:100%;
+    justify-content: center;
+    
+  }
+
+  .about .container h1{
+    text-align: center;
+    margin-bottom: 70px;
   }
 
   .about .container .img-container{
@@ -376,6 +387,7 @@ margin: 0 auto;
   
    text-align: center;
   }
+
   
   .services .container-services,
   .container-portifolio {
@@ -516,6 +528,7 @@ margin: 0 auto;
     flex-direction: column;
   }
 
+  
 
 }
 
